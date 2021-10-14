@@ -20,3 +20,4 @@ Nama  : Genja Rizky Novianto
 <br>
 NIM   :119140093
 
+permisi bang maaf sebelumnya ini saya upload ulang untuk minggu 1 karena branchnya kemaren belum di pull jadi ga masuk di githubnya abang
