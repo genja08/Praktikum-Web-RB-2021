@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>Form</title>
+    
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    
+        <link href="form.css" rel="stylesheet" media="all">
+    </head>
+    <body id="body">
+        <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+            <div class="wrapper wrapper--w680">
+                <div class="card card-4">
+                    <div class="card-body">
+                        <h2 class="title">Form Saran & Kritik</h2>
+                        <form method="POST">
+                            <div class="row row-space">
+                                <div class="col-2">
+                                    <div class="input-group">
+                                        <label class="label">Nama Depan</label>
+                                        <input class="input--style-4" type="text" name="first_name">
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="input-group">
+                                        <label class="label">Nama Belakang</label>
+                                        <input class="input--style-4" type="text" name="last_name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-space">
+                                <div class="col-2">
+                                    <div class="input-group">
+                                        <label class="label">Tempat Tanggal Lahir</label>
+                                            <input class="input--style-4" type="text" name="birthday">
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="input-group">
+                                        <label class="label">Jenis Kelamin</label>
+                                        <div class="p-t-10">
+                                            <label class="radio-container m-r-45">Pria
+                                                <input type="radio" checked="checked" name="gender">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="radio-container">Wanita
+                                                <input type="radio" name="gender">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-space">
+                                <div class="col-2">
+                                    <div class="input-group">
+                                        <label class="label">Email</label>
+                                        <input class="input--style-4" type="email" name="email">
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="input-group">
+                                        <label class="label">Nomor Telepon</label>
+                                        <input class="input--style-4" type="text" name="phone">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label class="label">pendidikan</label>
+                                    <select name="subject">
+                                        <option disabled="disabled" selected="selected"></option>
+                                        <option>Sekolah Dasar</option>
+                                        <option>Sekolah Menengah Pertama</option>
+                                        <option>Sekolah Menengah Atas</option>
+                                        <option>Perguruan Tinggi</option>
+                                    </select>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Kritik & Saran</label>
+                                    <input class="input--style-4" type="text" name="last_name">
+                                </div>
+                            </div>
+                            <div class="p-t-15">
+                                <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <p><small>Copyright &copy;2021 Curriculum Vitae.Created by Genja Rizky Novianto</small><a href="#body"><small>Ke Atas</small></a></p>
+    </footer>
+</html>
