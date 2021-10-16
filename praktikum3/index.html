@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genja Rizky Novianto</title>
+    <link rel="stylesheet" href="style3.css">
+
+</head>
+<body id="body">
+    <h3>Pilih Tema</h3>
+        
+        <center><select class="selectColor" id="warna" onchange ="changeColor()">
+            <option value="">Pilih</option>
+            <option value="red">Merah</option>
+            <option value="yellow">Kuning</option>
+            <option value="green">Hijau</option>
+            <option value="blue">Biru</option>
+            <option value="black">Hitam</option>
+            <option value="white">Putih</option>
+        </select></center>
+        </div>
+
+    <div class="tema">
+    <script>
+        function changeColor(){
+            var color = document.getElementById("warna");
+            if (warna.value=="red"){
+                document.body.style.backgroundColor = "red";
+                document.getElementById("body").style.color = "black";
+            }else if (warna.value=="yellow"){
+                document.body.style.backgroundColor = "yellow";
+                document.getElementById("body").style.color = "black";
+            }else if (warna.value=="green"){
+                document.body.style.backgroundColor = "green";
+                document.getElementById("body").style.color = "black";
+            }else if (warna.value=="blue"){
+                document.body.style.backgroundColor = "blue";
+                document.getElementById("body").style.color = "black";
+            }else if (warna.value=="black"){
+                document.body.style.backgroundColor = "black";
+                document.getElementById("body").style.color = "white";
+            }else if (warna.value=="white"){
+                document.body.style.backgroundColor = "white";
+                document.getElementById("body").style.color = "black";
+            }
+            else{
+                document.body.style.backgroundColor = "grey";
+            }
+        }
+    </script>  
+    </div>
+
+    <h2>Welcome To My Website ^.^</h2>
+    <center><label for="motor">Pilih tipe motor yang anda inginkan</label></center>
+        <center><select name="motor" id="motor" onchange="mtr()">
+            <option value="">Pilih</option>
+            <option value="matic">matic</option>
+            <option value="gigi">gigi</option>
+            <option value="kopling">kopling</option>
+        </select></center>
+    
+    <p id="tampil"></p>
+    
+    <div class="mtr">
+    <script>
+        function mtr(){
+            var jenismotor=document.getElementById("motor");
+
+            if(jenismotor.value=="matic"){
+                var kendaraan=document.getElementById("tampil");
+                kendaraan.innerText = "Anda tipikal orang yang suka santai dalam berkendara";
+           
+            }else if(jenismotor.value=="gigi"){
+                var kendaraan=document.getElementById("tampil");
+                kendaraan.innerText = "Anda tipikal orang yang suka jalan-jalan dan pekerja keras";
+           
+            }else if(jenismotor.value=="kopling"){
+                var kendaraan=document.getElementById("tampil");
+                kendaraan.innerText = "Anda tipikal orang yang suka ngebut dan terlihat keren di jalan";
+    
+            }
+            else{
+                var kendaraan=document.getElementById("tampil");
+                kendaraan.innerText = "Anda tipikal orang yang simple dan ramah lingkungan";
+            }
+        }    
+    </script>
+    </div>
+
+    <h3> Masukkan angka yang ingin anda factorialkan </h3>
+    <center><input type = "number" min="1" id = "num"></center>
+    <center><button type = "button" onclick = "submit()"> Submit </button></center>
+    <h4> Hasil Factorialnya yaitu : <span id = "answer"> </span> </h4>
+    
+    <script>
+        function submit(){
+            var num = parseInt( document.getElementById("num").value);
+            if( isNaN(num) ){
+                alert(" Enter valid number ");
+                return;
+            }
+
+            var factorial = calcFact(num);
+            document.getElementById("answer").innerHTML = factorial;
+        }
+        
+        function calcFact( num ){
+        var i;
+        var fact = 1;
+        for( i = 1; i <= num; i++ ){
+            fact = fact * i;
+        }
+        return fact;
+        }
+    </script>
+
+</body>
+</html>
