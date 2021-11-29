@@ -20,3 +20,8 @@ Nama  :Genja Rizky Novianto
 <br>
 NIM   :119140093
 
+Hal yang ditambahkan pada percobaan :
+1. Merapihkan Code
+2. Edit Tittle pada home.php
+3. memisahkan file tipe js dan tipe css diluar php
+4. mengikuti percobaan yang ada di modul
